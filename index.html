@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <script src="movies.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PELICULAS</title>
+</head>
+
+<body>
+    <header class="titulo">
+        <h1 id="movies">Game Night</h1>
+    </header>
+    <div class="imagenes">
+        <img name="slide" class="img" onmouseover="over()" onmouseout="out()">
+        <div class="over" id="onmouse" name="slide2">
+            <h2 id="text" class="texto"></h2>
+        </div>
+    </div>
+    <input id="right" type=image src="img/b.dere.png" width="35" height="35" onclick="changeImg(),moviess()" class="right">
+    <input id="left" type=image src="img/b.izq.png" width="35" height="35" onclick="returnImg(),moviess()" class="left">
+
+    <div>
+        <input id="down" type=image src="img/b.ab.png" width="35" height="35" onclick="arriba()" class="abajoo">
+    </div>
+    <div class="esconder" id="arriba">
+        <input id="up" type=image src="img/b.ar.png" width="35" height="35" onclick="abajo()" class="arribaa">
+    </div>
+    <div id="informacion" class="inf">
+        <hr><img src="img/evento.png">
+        <h4 id="1"> </h4>
+        <hr><img src="img/entretenimiento.png">
+        <h4 id="2"></h4>
+        <hr><img src="img/estrella.png">
+        <h4 id="3"></h4>
+        <hr><img src="img/cine.png">
+        <h4 id="4"></h4>
+        <hr>
+    </div>
+    <script>
+        start();
+    </script>
+</body>
+
+</html>
